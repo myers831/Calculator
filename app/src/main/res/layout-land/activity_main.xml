@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.calculator.MainActivity"
-    android:gravity="center_vertical">
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -49,6 +46,20 @@
             android:text="Del"
             android:id="@+id/btnDel"
             android:onClick="btn_del"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="="
+            android:id="@+id/btnEqual"
+            android:onClick="btn_equal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="^"
+            android:id="@+id/btnPow"
+            android:onClick="btn_pow"/>
 
     </LinearLayout>
     <LinearLayout
@@ -81,15 +92,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
+            android:text="."
+            android:id="@+id/btnDeci"
+            android:onClick="btn_Deci"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
             android:text="/"
             android:id="@+id/btnDiv"
             android:onClick="btn_div"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="-"
+            android:id="@+id/btnSub"
+            android:onClick="btn_sub"/>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="0"
+            android:id="@+id/btnZero"
+            android:onClick="btn_zero"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,55 +150,14 @@
             android:text="x"
             android:id="@+id/btnMulti"
             android:onClick="btn_multi"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        >
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="."
-            android:id="@+id/btnDeci"
-            android:onClick="btn_Deci"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="0"
-            android:id="@+id/btnZero"
-            android:onClick="btn_zero"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="="
-            android:id="@+id/btnEqual"
-            android:onClick="btn_equal"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="-"
-            android:id="@+id/btnSub"
-            android:onClick="btn_sub"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        >
-        <Button
-            android:layout_marginLeft="265dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="+"
             android:id="@+id/btnAdd"
             android:onClick="btn_add"/>
-
     </LinearLayout>
 
 </LinearLayout>

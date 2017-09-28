@@ -121,4 +121,7 @@ public class MainActivity extends AppCompatActivity {
         tvHolder = tvResults.getText().toString();
         tvResults.setText(tvHolder + "+");
     }
+
+    public void btn_pow(View view) {
+    }
 }
